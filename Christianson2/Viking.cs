@@ -10,7 +10,8 @@
                   Viking class contains five properties which     ***
                   are unique to each class instance.              ***
 ********************************************************************/
-using static VikingNS.Global;
+using System;
+using static System.Console;
 
 namespace VikingNS {
 
@@ -45,12 +46,67 @@ namespace VikingNS {
 *** IN/OUT ARGS : none                                            ***
 *** RETURN : none                                                 ***
 ********************************************************************/
-        public Viking(string name = "Bjorn", Status status = Status.KARL, short health = 150, Weapon weapon = Weapon.AXE, bool shield = false) {
+        public Viking(string name = "Bjorn", Global.Status status = Global.Status.KARL, short health = 150, Global.Weapon weapon = Global.Weapon.AXE, bool shield = false) {
             Name = name;
             Shield = shield;
             Health = health;
             Status = status;
             Weapon = weapon;
+        }
+
+        public void viewH() {
+            string statusFormatted = "";
+            string weaponFormatted = "";
+
+            switch (Status) {
+                case Global.Status.JARL:
+                    statusFormatted = "Jarl";
+                    break;
+                case Global.Status.KARL:
+                    statusFormatted = "Karl";
+                    break;
+                case Global.Status.THRALL:
+                    statusFormatted = "Thrall";
+                    break;
+            }
+
+            switch (Weapon) {
+                case Global.Weapon.AXE:
+                    weaponFormatted = "Axe";
+                    break;
+                case Global.Weapon.SWORD:
+                    weaponFormatted = "Sword";
+                    break;
+            }
+            //avoid using '\t' to allow spacing between words to be underlined
+            Console.WriteLine("\x1B[4mName    Status  Health  Weapon  Shield\n\x1B[0m" + Name + "\t" + statusFormatted + "\t" + Health + "\t" + weaponFormatted + "\t" + Shield + "\n");
+        }
+
+        public void viewV() {
+            string statusFormatted = "";
+            string weaponFormatted = "";
+
+            switch (Status) {
+                case Global.Status.JARL:
+                    statusFormatted = "Jarl";
+                    break;
+                case Global.Status.KARL:
+                    statusFormatted = "Karl";
+                    break;
+                case Global.Status.THRALL:
+                    statusFormatted = "Thrall";
+                    break;
+            }
+
+            switch (Weapon) {
+                case Global.Weapon.AXE:
+                    weaponFormatted = "Axe";
+                    break;
+                case Global.Weapon.SWORD:
+                    weaponFormatted = "Sword";
+                    break;
+            }
+            Console.WriteLine("Name:\t" + Name + "\nRace:\t" + statusFormatted + "\nHealth:\t" + Health + "\nWeapon:\t" + weaponFormatted + "\nShield:\t" + Shield + "\n");
         }
 
     }

@@ -17,5 +17,5 @@ Viking viking1 = new("John", Global.Status.JARL, 150, Global.Weapon.SWORD, false
 Viking viking2 = new Viking();
 
 // display viking1 properties in vertical and horizontal format
-IView.viewV(viking1);
-IView.viewH(viking2);
+viking1.viewV();
+viking2.viewH();
