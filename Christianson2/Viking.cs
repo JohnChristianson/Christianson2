@@ -10,14 +10,15 @@
                   Viking class contains five properties which     ***
                   are unique to each class instance.              ***
 ********************************************************************/
+using static VikingNS.Global;
 
 namespace VikingNS {
 
     public class Viking {
         public string Name { get; set; }
-        public Status Status { get; set; }
+        public Global.Status Status { get; set; }
         public short Health { get; set; }
-        public Weapon Weapon { get; set; }
+        public Global.Weapon Weapon { get; set; }
         public bool Shield { get; set; }
 
 /********************************************************************

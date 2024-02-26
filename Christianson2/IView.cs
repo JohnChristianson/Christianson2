@@ -11,6 +11,8 @@
                   properties of a Viking instance.                ***
 ********************************************************************/
 
+
+
 namespace VikingNS {
 
     public static class IView {
@@ -30,22 +32,22 @@ namespace VikingNS {
             string weaponFormatted = "";
 
             switch (viking.Status) {
-                case Status.JARL:
+                case Global.Status.JARL:
                     statusFormatted = "Jarl";
                     break;
-                case Status.KARL:
+                case Global.Status.KARL:
                     statusFormatted = "Karl";
                     break;
-                case Status.THRALL:
+                case Global.Status.THRALL:
                     statusFormatted = "Thrall";
                     break;
             }
 
             switch (viking.Weapon) {
-                case Weapon.AXE:
+                case Global.Weapon.AXE:
                     weaponFormatted = "Axe";
                     break;
-                case Weapon.SWORD:
+                case Global.Weapon.SWORD:
                     weaponFormatted = "Sword";
                     break;
             }
@@ -69,22 +71,22 @@ namespace VikingNS {
             string weaponFormatted = "";
 
             switch (viking.Status) {
-                case Status.JARL:
+                case Global.Status.JARL:
                     statusFormatted = "Jarl";
                     break;
-                case Status.KARL:
+                case Global.Status.KARL:
                     statusFormatted = "Karl";
                     break;
-                case Status.THRALL:
+                case Global.Status.THRALL:
                     statusFormatted = "Thrall";
                     break;
             }
 
             switch (viking.Weapon) {
-                case Weapon.AXE:
+                case Global.Weapon.AXE:
                     weaponFormatted = "Axe";
                     break;
-                case Weapon.SWORD:
+                case Global.Weapon.SWORD:
                     weaponFormatted = "Sword";
                     break;
             }
