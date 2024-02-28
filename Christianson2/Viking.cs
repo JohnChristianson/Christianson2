@@ -6,13 +6,10 @@
 *** INSTRUCTOR : GAMRADT                                          ***
 *********************************************************************
 *** DESCRIPTION : Create user-defined ADTs named Viking and       *** 
-                  Global, accompanied by an interface IView. The  ***
-                  Viking class contains five properties which     ***
-                  are unique to each class instance.              ***
+***               Global, accompanied by an interface IView. The  ***
+***               Viking class contains five properties which     ***
+***               are unique to each class instance.              ***
 ********************************************************************/
-using System;
-using static System.Console;
-
 namespace VikingNS {
 
     public class Viking {
@@ -26,7 +23,7 @@ namespace VikingNS {
 *** METHOD Viking                                                 ***
 *********************************************************************
 *** DESCRIPTION : Copy constructor creates a copy of a Viking     ***
-                  instance by calling the default constructor     ***
+***               instance by calling the default constructor     ***
 *** INPUT ARGS : viking                                           ***
 *** OUTPUT ARGS : none                                            ***
 *** IN/OUT ARGS : none                                            ***
@@ -39,8 +36,8 @@ namespace VikingNS {
 *** METHOD Viking                                                 ***
 *********************************************************************
 *** DESCRIPTION : Default constructor creates a new instance of   ***
-                  the Viking class and populates its fields from  ***
-                  input arguments                                 ***
+***               the Viking class and populates its fields from  ***
+***               input arguments                                 ***
 *** INPUT ARGS : name, status, health, weapon, shield             ***
 *** OUTPUT ARGS : none                                            ***
 *** IN/OUT ARGS : none                                            ***
@@ -68,6 +65,10 @@ namespace VikingNS {
                 case Global.Status.THRALL:
                     statusFormatted = "Thrall";
                     break;
+                default:
+                    statusFormatted = "ERR";
+                    break;
+
             }
 
             switch (Weapon) {
@@ -76,6 +77,9 @@ namespace VikingNS {
                     break;
                 case Global.Weapon.SWORD:
                     weaponFormatted = "Sword";
+                    break;
+                default:
+                    statusFormatted = "ERR";
                     break;
             }
             //avoid using '\t' to allow spacing between words to be underlined

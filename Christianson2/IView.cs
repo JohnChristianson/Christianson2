@@ -6,9 +6,9 @@
 *** INSTRUCTOR : GAMRADT                                          ***
 *********************************************************************
 *** DESCRIPTION : Create user-defined ADTs named Viking and       *** 
-                  Global, accompanied by an interface IView. The  ***
-                  IView class contains two methods which display  ***
-                  properties of a Viking instance.                ***
+***               Global, accompanied by an interface IView. The  ***
+***               IView class contains two methods which display  ***
+***               properties of a Viking instance.                ***
 ********************************************************************/
 
 
@@ -17,6 +17,6 @@ namespace VikingNS {
 
     public interface IView {
         public void ViewH();
-        public void viewV();
+        public void ViewV();
     }
 }

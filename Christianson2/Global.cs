@@ -6,10 +6,10 @@
 *** INSTRUCTOR : GAMRADT                                          ***
 *********************************************************************
 *** DESCRIPTION : Create user-defined ADTs named Viking and       *** 
-                  Global, accompanied by an interface IView. The  ***
-                  Global class contains two public enumerated     ***
-                  types, Status and Weapon, which are used in     ***
-                  each Viking class instance                      ***
+***               Global, accompanied by an interface IView. The  ***
+***               Global class contains two public enumerated     ***
+***               types, Status and Weapon, which are used in     ***
+***               each Viking class instance                      ***
 ********************************************************************/
 namespace VikingNS {
     
