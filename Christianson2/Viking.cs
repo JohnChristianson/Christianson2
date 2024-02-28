@@ -54,7 +54,7 @@ namespace VikingNS {
             Weapon = weapon;
         }
 
-        public void viewH() {
+        public void ViewH() {
             string statusFormatted = "";
             string weaponFormatted = "";
 
@@ -82,7 +82,7 @@ namespace VikingNS {
             Console.WriteLine("\x1B[4mName    Status  Health  Weapon  Shield\n\x1B[0m" + Name + "\t" + statusFormatted + "\t" + Health + "\t" + weaponFormatted + "\t" + Shield + "\n");
         }
 
-        public void viewV() {
+        public void ViewV() {
             string statusFormatted = "";
             string weaponFormatted = "";
 

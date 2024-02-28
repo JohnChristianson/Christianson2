@@ -16,7 +16,7 @@
 namespace VikingNS {
 
     public interface IView {
-        public void viewH();
+        public void ViewH();
         public void viewV();
     }
 }
